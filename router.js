@@ -4,6 +4,10 @@ const express = require("express")
 const User = require("./src/users/services/user")
 const Movie = require("./src/theMovieDb/services/methods")
 
+app.get("/",(req,res)=>{
+    res.json({code:200})
+})
+
 app.post("/api/register",express.json(),async(req,res)=>{
     try{
         
